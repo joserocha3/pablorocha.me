@@ -30,8 +30,8 @@ const Skills = () => {
         Skills
       </Heading>
       <Wrap as="h3" spacing={6}>
-        {data.map((skill) => (
-          <Tag size="lg" p={3}>
+        {data.map((skill, index) => (
+          <Tag key={index} size="lg" p={3}>
             {skill}
           </Tag>
         ))}

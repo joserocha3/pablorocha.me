@@ -48,8 +48,8 @@ const InfoCard = ({
           )}
           {description && <Text>{description}</Text>}
         </VStack>
-        {list.map((item) => (
-          <Text>- {item}</Text>
+        {list.map((item, index) => (
+          <Text key={index}>- {item}</Text>
         ))}
       </Flex>
     </Container>
