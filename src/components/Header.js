@@ -10,22 +10,25 @@ const Header = () => {
   return (
     <Container as={Flex} justify="space-between" py={5} fontWeight="bold">
       <HStack spacing={[4, 8]} align="baseline">
-        <Link
-          href="/"
-          fontSize="2xl"
-          display={['block', 'none']}
-          aria-label="home logo"
-        >
-          PR
-        </Link>
-        <Link
-          href="/"
-          fontSize="2xl"
-          display={['none', 'block']}
-          aria-label="home logo"
-        >
-          Pablo Rocha
-        </Link>
+        <Flex>
+          <Link
+            href="/"
+            fontSize="2xl"
+            display={['block', 'none']}
+            aria-label="home logo"
+            ml={[0, null]}
+          >
+            PR
+          </Link>
+          <Link
+            href="/"
+            fontSize="2xl"
+            display={['none', 'block']}
+            aria-label="home logo"
+          >
+            Pablo Rocha
+          </Link>
+        </Flex>
         <Link href="/about">About</Link>
         <Link href="/blog">Blog</Link>
       </HStack>
