@@ -11,6 +11,7 @@ const Intro = () => {
           size="2xl"
           src="/assets/img/headshot-512.jpg"
           objectFit="cover"
+          name="Pablo Rocha"
         />
         <Heading as="h1" fontWeight="black" size="2xl">
           Pablo Rocha
