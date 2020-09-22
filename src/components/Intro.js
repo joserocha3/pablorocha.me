@@ -6,7 +6,7 @@ import Link from '@components/Link'
 const Intro = () => {
   return (
     <Container textAlign="center">
-      <VStack spacing={1} py={16}>
+      <VStack spacing={1} py={[8, 16]}>
         <Avatar
           size="2xl"
           src="/assets/img/headshot-512.jpg"
@@ -24,11 +24,11 @@ const Intro = () => {
             isExternal
             color="gray.500"
             _hover={{ color: 'black' }}
+            aria-label="github profile"
           >
             <svg
               alt="github profile"
               size="50"
-              class="Social__StyledGithub-xx8ddk-0 dzahyt"
               fill="currentColor"
               viewBox="0 0 24 24"
               height="25"
@@ -42,10 +42,10 @@ const Intro = () => {
             isExternal
             color="gray.500"
             _hover={{ color: '#4267B2' }}
+            aria-label="facebook profile"
           >
             <svg
               alt="facebook profile"
-              class="Social__StyledFacebook-xx8ddk-1 jdMVhT"
               fill="currentColor"
               height="25"
               width="25"
@@ -60,10 +60,10 @@ const Intro = () => {
             isExternal
             color="gray.500"
             _hover={{ color: '#0072b1' }}
+            aria-label="linkedin profile"
           >
             <svg
               alt="linkedin profile"
-              class="Social__StyledLinkedIn-xx8ddk-2 erfutN"
               fill="currentColor"
               height="25"
               width="25"
@@ -90,13 +90,18 @@ const Intro = () => {
         <VStack mt={4} spacing={2}>
           <Text textAlign="center">
             ✏️&nbsp;&nbsp;Get in touch via my&nbsp;
-            <Link href="/contact" color="gray.500">
+            <Link href="/contact" color="gray.500" textDecoration="underline">
               contact form
             </Link>
           </Text>
           <Text textAlign="center">
             📫&nbsp;&nbsp;Email me at&nbsp;
-            <Link href="mailto:hello@pablorocha.me" isExternal color="gray.500">
+            <Link
+              href="mailto:hello@pablorocha.me"
+              isExternal
+              color="gray.500"
+              textDecoration="underline"
+            >
               hello@pablorocha.me
             </Link>
           </Text>
@@ -106,11 +111,12 @@ const Intro = () => {
               href="assets/files/pablo-rocha-resume.pdf"
               isExternal
               color="gray.500"
+              textDecoration="underline"
             >
               Download
             </Link>
             &nbsp;or&nbsp;
-            <Link href="/about" color="gray.500">
+            <Link href="/about" color="gray.500" textDecoration="underline">
               view
             </Link>
             &nbsp;my resume
