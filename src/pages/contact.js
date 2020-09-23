@@ -6,7 +6,7 @@ import Link from '@components/Link'
 
 const Contact = () => {
   return (
-    <Layout>
+    <Layout title="Contact | Pablo Rocha's Technology, Blog and Portfolio">
       <Container textAlign="center">
         <VStack spacing={3} py={16}>
           <Heading as="h1" fontWeight="black" size="2xl">

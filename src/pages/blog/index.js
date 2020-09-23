@@ -8,7 +8,7 @@ import { getAllPosts } from '@lib/api'
 
 const Blog = ({ allPosts }) => {
   return (
-    <Layout>
+    <Layout title="Blog | Pablo Rocha's Technology, Blog and Portfolio">
       <Container>
         <Heading mb={6}>Some Light Reading</Heading>
         <AllPosts posts={allPosts} />

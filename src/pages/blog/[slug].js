@@ -15,7 +15,10 @@ const Post = ({ post, preview }) => {
   const router = useRouter()
 
   return (
-    <Layout preview={preview}>
+    <Layout
+      preview={preview}
+      title="Blog | Pablo Rocha's Technology, Blog and Portfolio"
+    >
       <Container maxW={800}>
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>

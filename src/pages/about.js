@@ -10,7 +10,7 @@ import Projects from '@components/Projects'
 
 const Contact = () => {
   return (
-    <Layout>
+    <Layout title="About | Pablo Rocha's Technology, Blog and Portfolio">
       <Container mb={6}>
         <Heading mb={4}>About Me</Heading>
         <Text fontSize="lg">

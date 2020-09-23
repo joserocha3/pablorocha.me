@@ -1,5 +1,10 @@
 import Head from 'next/head'
 
+const TITLE = "Pablo Rocha's Technology, Blog and Portfolio"
+const DESCRIPTION = 'Pablo Rocha is a developer & tech enthusiast.'
+const IMAGE = 'https://pablorocha.me/assets/img/headshot.jpg'
+const URL = 'https://pablorocha.me'
+
 function makeSchema() {
   return [
     {
@@ -8,7 +13,7 @@ function makeSchema() {
         '@context': 'http://schema.org',
         '@type': 'Person',
         name: 'Jose Pablo Rocha, Jr.',
-        image: 'https://pablorocha.me/headshot.jpg',
+        image: IMAGE,
         jobTitle: 'Software Engineer',
         gender: 'male',
         address: {
@@ -29,13 +34,13 @@ function makeSchema() {
           'https://instagram.com/jprocha101',
           'https://www.linkedin.com/in/jprocha101',
         ],
-        url: 'https://pablorocha.me',
+        url: URL,
       }),
     },
   ]
 }
 
-export default function Meta() {
+const Meta = ({ title, description, image }) => {
   return (
     <Head>
       <link
@@ -66,14 +71,25 @@ export default function Meta() {
       <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
       <meta name="theme-color" content="#000" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
-      <meta
-        name="description"
-        content="Pablo Rocha is a developer & tech enthusiast."
-      />
-      <meta
-        property="og:image"
-        content="https://pablorocha.me/assets/img/headshot.jpg"
-      />
+
+      {/* HTML Meta Tags */}
+      <title>{title || "Pablo Rocha's Technology, Blog and Portfolio"}</title>
+      <meta name="description" content={description || DESCRIPTION} />
+
+      {/* Facebook Meta Tags */}
+      <meta property="og:url" content={URL} />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content={title || TITLE} />
+      <meta property="og:description" content={description || DESCRIPTION} />
+      <meta property="og:image" content={image || IMAGE} />
+
+      {/* Twitter Meta Tags */}
+      <meta property="twitter:url" content={URL} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={title || TITLE} />
+      <meta name="twitter:description" content={description || DESCRIPTION} />
+      <meta name="twitter:image" content={image || IMAGE} />
+
       <script
         key="ld+json"
         type="application/ld+json"
@@ -82,3 +98,5 @@ export default function Meta() {
     </Head>
   )
 }
+
+export default Meta
