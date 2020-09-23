@@ -5,8 +5,7 @@ import matter from 'gray-matter'
 const postsDirectory = join(process.cwd(), '_posts')
 
 const getPostSlugs = () => {
-  const files = fs.readdirSync(postsDirectory) || []
-  return files.filter((file) => file !== '.keep') || []
+  return fs.readdirSync(postsDirectory) || []
 }
 
 const getPostBySlug = (slug, fields = []) => {

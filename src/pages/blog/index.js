@@ -1,8 +1,8 @@
-import { Heading, Text } from '@chakra-ui/core'
+import { Heading } from '@chakra-ui/core'
 
 import Layout from '@components/Layout'
 import Container from '@components/Container'
-import MoreStories from '@components/more-stories'
+import AllPosts from '@components/AllPosts'
 
 import { getAllPosts } from '@lib/api'
 
@@ -10,19 +10,8 @@ const Blog = ({ allPosts }) => {
   return (
     <Layout>
       <Container>
-        <Heading mb={6}>Blog Posts</Heading>
-        {allPosts.length > 0 ? (
-          <MoreStories posts={allPosts} />
-        ) : (
-          <>
-            <Text>Nothing to see here yet :)</Text>
-            <br />
-            <Text>
-              I am working hard at creating some good content. Check back soon
-              for some informative and insightful blog posts.
-            </Text>
-          </>
-        )}
+        <Heading mb={6}>Some Light Reading</Heading>
+        <AllPosts posts={allPosts} />
       </Container>
     </Layout>
   )
@@ -32,7 +21,6 @@ export async function getStaticProps() {
     'title',
     'date',
     'slug',
-    'author',
     'coverImage',
     'excerpt',
   ])
