@@ -4,7 +4,7 @@ import Layout from '@components/Layout'
 const Index = () => {
   return (
     <>
-      <Layout title="Home | Pablo Rocha's Technology, Blog and Portfolio">
+      <Layout>
         <Intro />
       </Layout>
     </>
