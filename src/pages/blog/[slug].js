@@ -1,5 +1,4 @@
 import { useRouter } from 'next/router'
-import Head from 'next/head'
 
 import Container from '@components/Container'
 import Layout from '@components/Layout'
@@ -11,32 +10,27 @@ import { getPostBySlug, getAllPosts } from '@lib/api'
 
 import markdownToHtml from '@lib/markdownToHtml'
 
-const Post = ({ post, preview }) => {
+const Post = ({ post }) => {
   const router = useRouter()
 
   return (
     <Layout
-      preview={preview}
-      title="Blog | Pablo Rocha's Technology, Blog and Portfolio"
+      image={post.ogImage.url}
+      title={`${post.title} | Pablo Rocha`}
+      description={post.excerpt?.substring?.(0, 100)}
     >
       <Container maxW={800}>
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (
-          <>
-            <article>
-              <Head>
-                <title>{post.title} | Pablo Rocha</title>
-                <meta property="og:image" content={post.ogImage.url} />
-              </Head>
-              <PostHeader
-                title={post.title}
-                coverImage={post.coverImage}
-                date={post.date}
-              />
-              <PostBody content={post.content} />
-            </article>
-          </>
+          <article>
+            <PostHeader
+              title={post.title}
+              coverImage={post.coverImage}
+              date={post.date}
+            />
+            <PostBody content={post.content} />
+          </article>
         )}
       </Container>
     </Layout>
