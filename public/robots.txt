@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pablorocha.me/sitemap.xml
