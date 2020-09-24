@@ -17,7 +17,7 @@ const Post = ({ post }) => {
     <Layout
       image={post.ogImage.url}
       title={`${post.title} | Pablo Rocha`}
-      description={post.excerpt?.substring?.(0, 100)}
+      description={post.excerpt?.substring?.(0, 160)}
     >
       <Container maxW={800}>
         {router.isFallback ? (
