@@ -56,7 +56,7 @@ Clicking on the _Insert Row_ tab will take you to a screen where you can, well, 
 
 Here is the data I am using:
 
-```
+```bash
 pablorocha.me              https://github.com/joserocha3/pablorocha.me
 React Query                https://github.com/tannerlinsley/react-query
 Hasura GraphQL Engine      https://github.com/hasura/graphql-engine/
@@ -77,7 +77,7 @@ We will create a React project that will consume the GraphQL API Hasura is provi
 
 Create a new react project using `create-react-app`. Then install `react-query` and `graphqurl`.
 
-```
+```bash
 npx create-react-app react-query-with-hasura-ftw
 cd react-query-with-hasura-ftw
 yarn add react-query graphqurl
@@ -87,7 +87,7 @@ yarn add react-query graphqurl
 
 Replace the entire `Apps.js` file with the below code.
 
-```
+```jsx
 import React from 'react'
 import { ReactQueryCacheProvider, useQuery } from 'react-query'
 import { query } from 'graphqurl'
@@ -139,7 +139,7 @@ Let's look at individual code blocks to understand how the list is being retriev
 
 The starting point is the `App` componenet. We have to wrap out entire app in a `ReactQueryCacheProvider` component. This component places React Query's cache into the app's context, which enables it be acccessed anywhere in the component tree.
 
-```
+```jsx
 const App = () => {
   return (
     <ReactQueryCacheProvider>
@@ -153,7 +153,7 @@ From there we can step down one level into the `Projects` component. This is whe
 
 `useQuery` returns the `projectsQuery` variables. That contains information about the query state such whether it is loading or contains data. We are interested in the `data` because that will contain all the records from our database.
 
-```
+```jsx
 const Projects = () => {
   const projectsQuery = useQuery('project', getProjects)
 
@@ -174,7 +174,7 @@ const Projects = () => {
 
 The final block of code is our `getProjects` method. Which is being used as our query function. This method makes a call to our GraphQL API and parses out the data we want to return to our `Projects` component.
 
-```
+```jsx
 const getProjects = async () => {
   const results = await query({
     query: 'query { project { id name github } }',

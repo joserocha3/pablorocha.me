@@ -42,7 +42,7 @@ Go do the [Firebase console](https://console.firebase.google.com/u/0/) and click
 
 Once again follow the prompts, including giving your web app a nickname. At some point you will be shown the config for project. It will look something like this:
 
-```js
+```jsx
   const firebaseConfig = {
     apiKey: 'AIzaSyAsZ0*ee_aanJPKFg4rAAAdEVK1pb7rPh9',
     authDomain: 'drop-and-store.firebaseapp.com',
@@ -61,7 +61,7 @@ Take note of these configuration values. You will need them again in a couple of
 
 Create a new react project using `create-react-app`. Then install `react-dropzone` and `firebase`.
 
-```
+```bash
 npx create-react-app drop-and-store
 cd drop-and-store
 yarn add react-dropzone @firebase/app @firebase/storage
@@ -75,7 +75,7 @@ For the purpose of this tutorial that is all we need to do to get our project se
 
 We need to give our project access to our Firebase project and web app. We can do so by creating a `firebase.js` file in the `src` directory of our project. Create the file and paste this code into it. Remember to use your Firebase project's configuration values.
 
-```
+```jsx
 import firebase from '@firebase/app'
 import '@firebase/storage'
 
@@ -105,7 +105,7 @@ This code basically instructs our react project to connect to _your_ Firebase pr
 
 Most of our component code will live in `App.js`, so let's begin by replacing the entire file with the below code.
 
-```
+```jsx
 import React, { useCallback } from 'react'
 import { useDropzone } from 'react-dropzone'
 

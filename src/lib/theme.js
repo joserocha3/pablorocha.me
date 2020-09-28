@@ -4,9 +4,9 @@ import { mode } from '@chakra-ui/theme-tools'
 const markdown = (props) => ({
   px: [2, 0],
   '*': {
-    fontSize: '1.2rem',
     marginBottom: '16px',
   },
+
   img: {
     m: 'auto',
     w: ['90%', '100%'],
@@ -14,14 +14,8 @@ const markdown = (props) => ({
     my: 10,
   },
   p: {
+    fontSize: '1.2rem',
     lineHeight: 1.8,
-    code: {
-      background: mode('#f5f6f9', '#151e27')(props),
-      color: mode('black', 'white')(props),
-      p: '1px 4px',
-      borderRadius: 3,
-      fontSize: '1rem',
-    },
   },
   a: {
     textDecoration: 'underline',
@@ -47,18 +41,6 @@ const markdown = (props) => ({
       bg: mode('azure', '#013C3C')(props),
       p: 4,
       borderLeft: '4px solid #62dafc',
-    },
-  },
-  pre: {
-    background: mode('#f5f6f9', '#151e27')(props),
-    color: mode('black', 'white')(props),
-    padding: '12px',
-    borderRadius: 6,
-    overflowX: 'auto',
-    lineHeight: '1.8',
-    my: 10,
-    code: {
-      fontSize: '1rem',
     },
   },
 })
