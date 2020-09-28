@@ -1,6 +1,6 @@
 ---
 title: 'Quick API with React Query and Hasura'
-excerpt: 'Building a.'
+excerpt: 'Once in a while I start using a new framework or package and get that feeling that I know I have found a new member of my favorite tech stack.'
 coverImage: '/assets/blog/react-query-with-hasura/cover-800-400.jpg'
 date: '2020-09-28T12:00:00.000Z'
 author:
