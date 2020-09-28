@@ -149,7 +149,10 @@ const App = () => {
 }
 ```
 
-From there we can step down one level into the `Projects` component. This is where we implement `useQuery`. For this simple example that method takes two parameters. 1.) query key - a unique key to indentify a query - and 2.) a query function - a function to resolve the data for our component to render.
+From there we can step down one level into the `Projects` component. This is where we implement `useQuery`. For this simple example that method takes two parameters: 
+
+- query key - a unique key to indentify a query
+- query function - a function to resolve the data for our component to render
 
 `useQuery` returns the `projectsQuery` variables. That contains information about the query state such whether it is loading or contains data. We are interested in the `data` because that will contain all the records from our database.
 

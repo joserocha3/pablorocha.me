@@ -18,6 +18,7 @@ const markdown = (props) => ({
     lineHeight: 1.8,
   },
   a: {
+    fontSize: '1.2rem',
     textDecoration: 'underline',
   },
   h2: {
@@ -32,9 +33,15 @@ const markdown = (props) => ({
     mt: '32px',
   },
   ul: {
+    fontSize: '1.2rem',
+    ml: 8,
+  },
+  ol: {
+    fontSize: '1.2rem',
     ml: 8,
   },
   blockquote: {
+    fontSize: '1.2rem',
     fontStyle: 'italic',
     mb: 8,
     p: {

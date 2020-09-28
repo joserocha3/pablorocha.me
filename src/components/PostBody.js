@@ -57,7 +57,8 @@ const PostBody = ({ content }) => {
               border: 1px solid #dddddd;
               background-color: #f5f6f9;
               border-radius: 6px;
-              margin-bottom: 16px;
+              margin-bottom: 32px;
+              margin-top: 32px;
             }
 
             /* Inline code */
@@ -214,7 +215,8 @@ const PostBody = ({ content }) => {
               margin: 0.5em 0;
               overflow: auto;
               border-radius: 0.3em;
-              margin-bottom: 16px;
+              margin-bottom: 32px;
+              margin-top: 32px;
             }
 
             :not(pre) > code[class*='language-'],
