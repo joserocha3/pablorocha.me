@@ -34,7 +34,7 @@ As you use react-dropzone in your own projects you will grow to appreciate it mo
 
 ### Firebase Setup
 
-First you need to setup a Firebase project. The process is straight forward thanks to Firebases superb developer experience. 
+First you need to setup a Firebase project. The process is straight forward thanks to Firebase's superb developer experience. 
 
 Go do the [Firebase console](https://console.firebase.google.com/u/0/) and click _Add project_. Enter a cool name like "drop-and-store". Follow the prompts and Firebase will do its thing. Once your project is ready click on the Web app icon to create your a web app tied to your project.
 
