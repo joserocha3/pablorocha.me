@@ -2,13 +2,14 @@ import { extendTheme } from '@chakra-ui/core'
 import { mode } from '@chakra-ui/theme-tools'
 
 const markdown = (props) => ({
+  px: [2, 0],
   '*': {
     fontSize: '1.2rem',
     marginBottom: '16px',
   },
   img: {
     m: 'auto',
-    w: '100%',
+    w: ['80%', '100%'],
     maxW: 500,
     my: 10,
   },
