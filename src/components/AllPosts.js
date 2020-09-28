@@ -4,7 +4,7 @@ import PostPreview from '@components/PostPreview'
 
 const AllPosts = ({ posts }) => {
   return (
-    <SimpleGrid columns={[1, 1, 2, 3]} spacing={10}>
+    <SimpleGrid columns={[1, 1, 2, 3]} spacing={16}>
       {posts.map((post) => (
         <Box w="100%" key={post.slug}>
           <PostPreview

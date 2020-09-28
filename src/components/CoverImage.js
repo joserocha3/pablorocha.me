@@ -1,19 +1,13 @@
-import Link from 'next/link'
-import { VStack, Heading, Image, Text } from '@chakra-ui/core'
+import NextLink from 'next/link'
+import { Image, Link } from '@chakra-ui/core'
 
 const CoverImage = ({ title, src, slug }) => {
-  const image = <img src={src} alt={`Cover Image for ${title}`} />
-
   return (
-    <div>
-      {slug ? (
-        <Link as={`/blog/${slug}`} href="/blog/[slug]">
-          <a aria-label={title}>{image}</a>
-        </Link>
-      ) : (
-        image
-      )}
-    </div>
+    <NextLink as={`/blog/${slug}`} href="/blog/[slug]">
+      <Link aria-label={title}>
+        <Image src={src} alt={`Cover Image for ${title}`} />
+      </Link>
+    </NextLink>
   )
 }
 
