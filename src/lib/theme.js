@@ -9,7 +9,7 @@ const markdown = (props) => ({
   },
   img: {
     m: 'auto',
-    w: ['80%', '100%'],
+    w: ['90%', '100%'],
     maxW: 500,
     my: 10,
   },
