@@ -34,7 +34,7 @@ After everything is provisioned click the _Create project_ button and voila! - H
 
 ![setup complete](/assets/blog/react-query-with-hasura/4-setup-complete.png)
 
-There will now be a big blue _Launch Console_ button on the top right of the window. This will lead you to the console where you will make all your database changes. Any changes made in the console will trigger you GraphQL API to be updated, reflecting the changes you made. Neat!
+There will now be a big blue _Launch Console_ button on the top right of the window. This will lead you to the console where you will make all your database changes. Any changes made in the console will trigger your GraphQL API to be updated, reflecting the changes you made. Neat!
 
 ### Create a Database Table
 
