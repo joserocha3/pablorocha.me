@@ -42,7 +42,7 @@ We can quickly setup a database table by heading to the _Data_ tab and clicking 
 
 ![create a table](/assets/blog/react-query-with-hasura/5-create-table.png)
 
-You can setup the table as you wish, but I am going to use some cool JavaScript projects and links to their GitHub repositories. Here you will enter the table specific properties inclucing name, columns information, primary keys, etc. We are keeping it simply, all the setup you need is in the screenshot below.
+You can setup the table as you wish, but I am going to use some cool JavaScript projects and links to their GitHub repositories. Here you will enter the table specific properties including table name, column information, primary keys, etc. We are keeping it simply, all the setup you need is in the screenshot below.
 
 ![table setup](/assets/blog/react-query-with-hasura/6-table-setup.png)
 
@@ -50,7 +50,7 @@ Once done click the _Add Table_ button at the bottom of the screen.
 
 ### Add Some Data
 
-Clicking on the _Insert Row_ tab will take you to a screen where you can, well, insert a row. Type in some data and click _Save_ to insert a row. Then type in some different data and click _Insert Again_ again to insert another row.
+Clicking on the _Insert Row_ tab will take you to a screen where you can, well, insert a row. Type in some data and click _Save_ to insert a row. Then type in some different data and click _Insert Again_ to insert another row.
 
 ![add data](/assets/blog/react-query-with-hasura/7-add-data.png)
 
@@ -85,7 +85,7 @@ yarn add react-query graphqurl
 
 ### Render the List
 
-Replace the entire `Apps.js` file with the below code.
+Replace the entire `App.js` file with the below code.
 
 ```jsx
 import React from 'react'
@@ -137,7 +137,7 @@ After that simply run `yarn start` and you will see the project in action.
 
 Let's look at individual code blocks to understand how the list is being retrieved and rendered.
 
-The starting point is the `App` componenet. We have to wrap out entire app in a `ReactQueryCacheProvider` component. This component places React Query's cache into the app's context, which enables it be acccessed anywhere in the component tree.
+The starting point is the `App` component. We have to wrap out entire app in a `ReactQueryCacheProvider` component. This component places React Query's cache into the app's context, which enables it to be acccessed anywhere in the component tree.
 
 ```jsx
 const App = () => {
@@ -154,7 +154,7 @@ From there we can step down one level into the `Projects` component. This is whe
 - query key - a unique key to indentify a query
 - query function - a function to resolve the data for our component to render
 
-`useQuery` returns the `projectsQuery` variables. That contains information about the query state such whether it is loading or contains data. We are interested in the `data` because that will contain all the records from our database.
+`useQuery` returns the `projectsQuery` variable. That contains information about the query state such as whether it is loading or contains data. We are interested in `data` because that will contain all the records from our database.
 
 ```jsx
 const Projects = () => {
