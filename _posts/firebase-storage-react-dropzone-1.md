@@ -14,6 +14,8 @@ Building a file uploader from scratch is a time-consuming challenge. Adding some
 
 There is no point in building everything from scratch. Basically, *don't reinvent the wheel*.
 
+Prefer to see the code? Check the [repository](https://github.com/joserocha3/firebase-storage-react-dropzone).
+
 ## Firebase Cloud Storage
 
 It is easy to learn, easy to implement, but most of all it is free (at least until your project really starts to grow). Aside from that, it is [robust and offers secure SDKs](https://firebase.google.com/docs/storage) for various platforms including web, iOS and Android.

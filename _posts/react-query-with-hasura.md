@@ -14,6 +14,8 @@ React Query has joined the ranks among my favorite way to build an API, [Hasura]
 
 Let's take a look at how simple it is to setup an API using these two powerhouse tools.
 
+Don't want to read? Check the [repository](https://github.com/joserocha3/react-query-with-hasura).
+
 ## Fast Setup
 
 ### Create a Hasura Project
