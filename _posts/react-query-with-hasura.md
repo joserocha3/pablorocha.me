@@ -139,7 +139,7 @@ After that simply run `yarn start` and you will see the project in action.
 
 Let's look at individual code blocks to understand how the list is being retrieved and rendered.
 
-The starting point is the `App` component. We have to wrap out entire app in a `ReactQueryCacheProvider` component. This component places React Query's cache into the app's context, which enables it to be acccessed anywhere in the component tree.
+The starting point is the `App` component. We have to wrap our entire app in a `ReactQueryCacheProvider` component. This component places React Query's cache into the app's context, which enables it to be acccessed anywhere in the component tree.
 
 ```jsx
 const App = () => {
