@@ -1,3 +1,7 @@
+# custom build output
+sitemap.xml
+robots.txt
+
 # dependencies
 /node_modules
 /.pnp

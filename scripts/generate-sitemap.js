@@ -1,6 +1,7 @@
 const fs = require('fs')
 const globby = require('globby')
 const prettier = require('prettier')
+const matter = require('gray-matter')
 
 const generateSitemap = async () => {
   const pages = await globby([
@@ -10,7 +11,18 @@ const generateSitemap = async () => {
     '!src/pages/blog/[slug].js',
   ])
 
-  const paths = pages.map((page) => {
+  const paths = []
+
+  pages.forEach((page) => {
+    if (page.includes('_posts')) {
+      const fileContents = fs.readFileSync(page, 'utf8')
+      const { data } = matter(fileContents)
+
+      if (!data.isPublished) {
+        return
+      }
+    }
+
     const path = page
       .replace('src/pages', '')
       .replace('/index', '')
@@ -18,11 +30,11 @@ const generateSitemap = async () => {
       .replace('_posts', '/blog')
       .replace('.md', '')
 
-    return `
+    paths.push(`
       <url>
         <loc>${`https://pablorocha.me${path}`}</loc>
       </url>
-    `
+    `)
   })
 
   const sitemap = `
