@@ -1,7 +1,7 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import NextDocument, { Html, Head, Main, NextScript } from 'next/document'
 import { ColorModeScript } from '@chakra-ui/core'
 
-class MyDocument extends Document {
+class Document extends NextDocument {
   render() {
     return (
       <Html lang="en">
@@ -32,4 +32,4 @@ class MyDocument extends Document {
   }
 }
 
-export default MyDocument
+export default Document
