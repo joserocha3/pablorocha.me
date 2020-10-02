@@ -23,7 +23,7 @@ class MyDocument extends Document {
           />
         </Head>
         <body>
-          <ColorModeScript initialValue="dark" />
+          <ColorModeScript initialValue="light" />
           <Main />
           <NextScript />
         </body>
