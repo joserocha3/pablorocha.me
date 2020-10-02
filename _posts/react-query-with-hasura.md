@@ -7,6 +7,7 @@ author:
   name: Pablo Rocha
 ogImage:
   url: '/assets/blog/react-query-with-hasura/cover-800-400.jpg'
+isPublished: true
 ---
 Once in a while I start using a new framework or package and get that feeling that I know I have found a new member of my favorite tech stack. While working on [my latest project](https://criclick.com), I got that feeling when I found [React Query](https://react-query.tanstack.com). I quickly discovered why it has 13.3k ⭐'s on GitHub and why it's quickly gaining traction.
 

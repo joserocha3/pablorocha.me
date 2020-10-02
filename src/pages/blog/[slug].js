@@ -7,7 +7,6 @@ import PostHeader from '@components/PostHeader'
 import PostBody from '@components/PostBody'
 
 import { getPostBySlug, getAllPosts } from '@lib/api'
-
 import markdownToHtml from '@lib/markdownToHtml'
 
 const Post = ({ post }) => {
@@ -60,7 +59,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const posts = getAllPosts(['slug'])
+  const posts = getAllPosts(['slug', 'isPublished'])
 
   return {
     paths: posts.map((post) => {
