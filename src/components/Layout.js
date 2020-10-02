@@ -4,15 +4,22 @@ import Header from '@components/Header'
 import Meta from '@components/Meta'
 import Footer from '@components/Footer'
 
-const Layout = ({ image, title, description, children }) => {
+const Layout = ({
+  image,
+  title,
+  description,
+  children,
+  showHeader = true,
+  showFooter = true,
+}) => {
   return (
     <>
-      <Header />
+      {showHeader && <Header />}
       <Meta title={title} description={description} image={image} />
       <Box as="main" minH={200}>
         {children}
       </Box>
-      <Footer />
+      {showFooter && <Footer />}
     </>
   )
 }
