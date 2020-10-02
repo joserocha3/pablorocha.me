@@ -53,15 +53,16 @@ const markdown = (props) => ({
 })
 
 const theme = extendTheme({
+  config: {
+    useSystemColorMode: false,
+    initialColorMode: 'dark',
+  },
   styles: {
     global: (props) => ({
       body: {
         bg: mode('white', '#0E141B')(props),
         color: mode('#2A2C2D', 'white')(props),
         fontSize: 16,
-      },
-      a: {
-        transition: 'none',
       },
       '.markdown': markdown(props),
     }),
