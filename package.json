@@ -29,8 +29,8 @@
     "export": "next export"
   },
   "dependencies": {
-    "@chakra-ui/core": "^1.0.0-rc.3",
-    "@chakra-ui/icons": "^1.0.0-rc.3",
+    "@chakra-ui/core": "^1.0.0-rc.5",
+    "@chakra-ui/icons": "^1.0.0-rc.5",
     "@chakra-ui/theme-tools": "^1.0.0-rc.5",
     "@mapbox/rehype-prism": "^0.5.0",
     "date-fns": "2.16.1",
@@ -39,14 +39,14 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "rehype-stringify": "^8.0.0",
-    "remark-external-links": "^7.0.0",
+    "remark-external-links": "^7.0.1",
     "remark-parse": "^8.0.3",
     "remark-rehype": "^7.0.0",
     "unified": "^9.2.0"
   },
   "devDependencies": {
     "@types/node": "14",
-    "@types/react": "^16.9.49",
+    "@types/react": "^16.9.50",
     "favicons": "^6.2.0",
     "globby": "^11.0.1",
     "prettier": "^2.1.2",

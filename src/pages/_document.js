@@ -2,6 +2,10 @@ import NextDocument, { Html, Head, Main, NextScript } from 'next/document'
 import { ColorModeScript } from '@chakra-ui/core'
 
 class Document extends NextDocument {
+  static getInitialProps(ctx) {
+    return NextDocument.getInitialProps(ctx)
+  }
+
   render() {
     return (
       <Html lang="en">
@@ -23,7 +27,7 @@ class Document extends NextDocument {
           />
         </Head>
         <body>
-          <ColorModeScript initialValue="light" />
+          <ColorModeScript initialColorMode="light" />
           <Main />
           <NextScript />
         </body>

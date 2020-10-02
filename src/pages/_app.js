@@ -1,13 +1,11 @@
-import { ChakraProvider } from '@chakra-ui/core'
+import Chakra from '@components/Chakra'
 
-import theme from '@lib/theme'
-
-const MyApp = ({ Component, pageProps }) => {
+const App = ({ Component, pageProps }) => {
   return (
-    <ChakraProvider theme={theme} resetCSS>
+    <Chakra>
       <Component {...pageProps} />
-    </ChakraProvider>
+    </Chakra>
   )
 }
 
-export default MyApp
+export default App
