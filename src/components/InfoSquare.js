@@ -1,4 +1,4 @@
-import { Box, Heading, Text, Link, useColorModeValue } from '@chakra-ui/core'
+import { Heading, Text, Link, useColorModeValue } from '@chakra-ui/core'
 
 const InfoSquare = ({
   title,
@@ -13,11 +13,11 @@ const InfoSquare = ({
 
   return (
     <Link
-      as={Box}
+      display="flex"
       _hover={{ textDecoration: 'none' }}
       href={href}
       isExternal
-      direction="column"
+      flexDirection="column"
       borderTop="3px solid"
       p={4}
       borderRadius="md"
