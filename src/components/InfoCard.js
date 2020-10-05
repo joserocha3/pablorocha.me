@@ -1,4 +1,14 @@
-import { VStack, Flex, Heading, Text, useColorModeValue } from '@chakra-ui/core'
+import {
+  List,
+  ListItem,
+  ListIcon,
+  VStack,
+  Flex,
+  Heading,
+  Text,
+  useColorModeValue,
+} from '@chakra-ui/core'
+import { ChevronRightIcon } from '@chakra-ui/icons'
 
 import Container from '@components/Container'
 
@@ -40,7 +50,7 @@ const InfoCard = ({
         borderRadius="md"
         fontSize="lg"
       >
-        <VStack mb={4} spacing={1} align="flex-start">
+        <VStack mb={6} spacing={1} align="flex-start">
           {name && (
             <Heading as="h5" fontSize="2xl">
               {name}
@@ -48,9 +58,14 @@ const InfoCard = ({
           )}
           {description && <Text>{description}</Text>}
         </VStack>
-        {list.map((item, index) => (
-          <Text key={index}>- {item}</Text>
-        ))}
+        <List spacing={2} pl={6}>
+          {list.map((item, index) => (
+            <ListItem key={index}>
+              <ListIcon as={ChevronRightIcon} color="green.500" ml="-26px" />
+              {item}
+            </ListItem>
+          ))}
+        </List>
       </Flex>
     </Container>
   )
