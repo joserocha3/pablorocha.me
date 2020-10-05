@@ -9,11 +9,11 @@ const WorkHistory = () => {
         name="Owner / Developer"
         description="2015 - present"
         list={[
-          'Lead programmer for multiple web-based applications built React / Vue.js and MobX / Redux state management',
+          'Lead programmer for multiple web-based applications built with React / Vue.js and MobX / Redux state management',
           'Publish applications using a Node.js and GraphQL backend with React and Redux on the frontend',
           'Document React component architecture for use by self and other team members',
           'Deploy Meteor applications to Galaxy and Heroku hosting services',
-          'Created Flutter / React Native mobile applications and publishe to the Google Play Store and Apple App Store',
+          'Maintain Flutter / React Native mobile applications published to the Google Play Store and Apple App Store',
         ]}
       />
       <InfoCard
