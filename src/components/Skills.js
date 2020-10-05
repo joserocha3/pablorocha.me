@@ -5,10 +5,10 @@ import Container from '@components/Container'
 const data = [
   'JavaScript',
   'React',
-  'React Native',
   'Flutter',
+  'React Native',
   'Next.js',
-  'Vue.js',
+  'Netlify',
   'Firebase',
   'Node.js',
   'Heroku',
@@ -16,11 +16,14 @@ const data = [
   'PostgreSQL',
   'MongoDB',
   'GraphQL',
+  'styled-components',
+  'emotion',
+  'styled-system',
+  'HTML',
+  'CSS',
   'Git',
-  'style-components',
-  'HTML and CSS',
-  'Netlify',
   'D3.js',
+  'Figma',
 ]
 
 const Skills = () => {
