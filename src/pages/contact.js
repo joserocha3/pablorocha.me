@@ -19,7 +19,7 @@ const Contact = () => {
 
         <VStack
           as="form"
-          spacing={16}
+          spacing={8}
           py={6}
           maxW={500}
           mx="auto"
@@ -27,26 +27,29 @@ const Contact = () => {
           method="POST"
         >
           <Input
-            variant="flushed"
+            variant="filled"
             type="name"
             placeholder="Your name"
             fontSize="lg"
             isRequired
+            py={6}
           />
           <Input
-            variant="flushed"
+            variant="filled"
             type="email"
             placeholder="Your email address"
             fontSize="lg"
             isRequired
+            py={6}
           />
           <Textarea
-            variant="flushed"
+            variant="filled"
             type="message"
             placeholder="Tell me how I can help"
             h={200}
             fontSize="lg"
             isRequired
+            py={6}
           />
           <Button type="submit" colorScheme="blue" size="lg">
             Send
