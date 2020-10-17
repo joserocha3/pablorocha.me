@@ -33,8 +33,8 @@ const data = [
     title: 'Cagesum',
     description:
       "The world's first Nicolas Cage text placeholder generator. Created with Next.js on the front-end Hasura as a backend and hosted via Vercel",
-    lightColor: '#BBC8DB',
-    darkColor: '#5C89D2',
+    lightColor: '#EDDEE3',
+    darkColor: '#D5A7B6',
   },
 ]
 
