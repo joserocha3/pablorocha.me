@@ -16,7 +16,7 @@ const data = [
     href: 'https://www.dotdotdata.com',
     title: 'Dot Dot Data',
     description:
-      'Static website designed for a well-known Chicago dog trainer. Built using Gatsby and styled with styled-components.',
+      'Startup providing location based web and mobile applications to various clients.',
     lightColor: '#F1A7A7',
     darkColor: '#E96363',
   },
