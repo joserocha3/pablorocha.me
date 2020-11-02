@@ -11,7 +11,7 @@ import Projects from '@components/Projects'
 const Contact = () => {
   return (
     <Layout title="About | Pablo Rocha's Technology, Blog and Portfolio">
-      <Container mb={6}>
+      <Container mb={6} id="about">
         <Heading mb={4}>About Me</Heading>
         <Text fontSize="lg">
           I'm currently living in the southern part of Texas right along the

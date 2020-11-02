@@ -32,7 +32,7 @@ const data = [
 
 const Ventures = () => {
   return (
-    <Container mb={6}>
+    <Container mb={6} id="ventures">
       <Heading as="h3" mb={4}>
         Ventures
       </Heading>

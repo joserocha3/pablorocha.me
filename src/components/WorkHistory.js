@@ -4,6 +4,7 @@ const WorkHistory = () => {
   return (
     <>
       <InfoCard
+        id="work"
         title="Work History"
         subtitle="NoMoreAnalog"
         name="Owner / Developer"

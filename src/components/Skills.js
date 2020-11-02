@@ -28,7 +28,7 @@ const data = [
 
 const Skills = () => {
   return (
-    <Container mb={6}>
+    <Container mb={6} id="skills">
       <Heading as="h3" mb={4}>
         Skills
       </Heading>

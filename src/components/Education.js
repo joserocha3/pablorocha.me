@@ -4,6 +4,7 @@ const Education = () => {
   return (
     <>
       <InfoCard
+        id="education"
         title="Education"
         subtitle="University of Texas - Pan American"
         name="Bachelor of Business Administration in Computer Information Systems (CIS)"

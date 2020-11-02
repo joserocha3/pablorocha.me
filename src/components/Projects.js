@@ -40,7 +40,7 @@ const data = [
 
 const Projects = () => {
   return (
-    <Container mb={6}>
+    <Container mb={6} id="projects">
       <Heading as="h3" mb={4}>
         Projects
       </Heading>
