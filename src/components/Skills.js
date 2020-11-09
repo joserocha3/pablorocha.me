@@ -1,4 +1,4 @@
-import { Heading, Wrap, Tag } from '@chakra-ui/core'
+import { Heading, Wrap, WrapItem, Tag } from '@chakra-ui/core'
 
 import Container from '@components/Container'
 
@@ -34,9 +34,9 @@ const Skills = () => {
       </Heading>
       <Wrap as="h3" spacing={6}>
         {data.map((skill, index) => (
-          <Tag key={index} size="lg" p={3}>
+          <WrapItem as={Tag} key={index} size="lg" p={3}>
             {skill}
-          </Tag>
+          </WrapItem>
         ))}
       </Wrap>
     </Container>

@@ -1,4 +1,10 @@
-import { Heading, Text, Link, useColorModeValue } from '@chakra-ui/core'
+import {
+  Heading,
+  Text,
+  Link,
+  WrapItem,
+  useColorModeValue,
+} from '@chakra-ui/core'
 
 const InfoSquare = ({
   title,
@@ -12,7 +18,8 @@ const InfoSquare = ({
   const borderColor = useColorModeValue(darkColor, lightColor)
 
   return (
-    <Link
+    <WrapItem
+      as={Link}
       display="flex"
       _hover={{ textDecoration: 'none' }}
       href={href}
@@ -33,7 +40,7 @@ const InfoSquare = ({
         {title}
       </Heading>
       <Text mb={6}>{description}</Text>
-    </Link>
+    </WrapItem>
   )
 }
 
