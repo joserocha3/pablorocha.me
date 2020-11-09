@@ -15,6 +15,8 @@ Last time was more about setup. This time we are going to add some styling and u
 
 If you missed the [first part of this series](https://pablorocha.me/blog/firebase-storage-react-dropzone-1) be sure to check it out.
 
+Want to skip to the finished version of the code? Check the [part-2 branch](https://github.com/joserocha3/firebase-storage-react-dropzone/tree/part-2).
+
 ## Let's Get Started... Again
 
 ### Add Charkra UI
