@@ -15,7 +15,7 @@ Building a file uploader from scratch is a time-consuming challenge. Adding some
 
 There is no point in building everything from scratch. Basically, *don't reinvent the wheel*.
 
-Prefer to see the code? Check the [repository](https://github.com/joserocha3/firebase-storage-react-dropzone).
+Prefer to see the code? Check the [part-1 branch](https://github.com/joserocha3/firebase-storage-react-dropzone/tree/part-1).
 
 ## Firebase Cloud Storage
 
@@ -60,7 +60,28 @@ Once again follow the prompts, including giving your web app a nickname. At some
 
 Take note of these configuration values. You will need them again in a couple of minutes.
 
-### Project Setup
+Lastly, in the Firebase console we need to navigate the Storage section. If you see a "Get Started" button, click it and go through the prompts to create your storage bucket.
+
+![firebase create web app](/assets/blog/firebase-storage-react-dropzone-1/firebase-menu-storage.png)
+
+Once you have assigned a bucket then navigate to the Rules tab of the Storage section. Here update the rules as follows:
+
+![firebase create web app](/assets/blog/firebase-storage-react-dropzone-1/firebase-rules.png)
+
+That will allow us to read and write to the storage bucket without any authentication. Typically, you would not leave this completely open in a real world project, but for demo purposes that is okay.
+
+```js
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write: if true;
+    }
+  }
+}
+```
+
+### React Project Setup
 
 Create a new react project using `create-react-app`. Then install `react-dropzone` and `firebase`.
 
