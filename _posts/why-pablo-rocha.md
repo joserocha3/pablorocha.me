@@ -16,7 +16,7 @@ I’m a React.js developer based out of South Texas, and I create moduar, effici
 
 Beyond a simple a React.js developer, I am also a bit of a tech entrepreneur. I have founded of a couple of startups that are on their way to making their mark in their respective areas. Within those startups I do everything from frontend to backend coding, organizing client interations, as well as handle day-to-day affairs that affect our business.
 
-As of late I have been taking on more freelance work, and I enjoy learning about a client's business and helping them acheive their desired outcome. That along with my strong React.js and organization skills makes me a great fit for Totpal's best [freelance React.js developers](https://www.toptal.com/react).
+As of late I have been taking on more freelance work, and I enjoy learning about a client's business and helping them acheive their desired outcome. That along with my strong React.js, web development and organizational skills makes me a great fit for Totpal's best [freelance React.js developers](https://www.toptal.com/react).
 
 Let’s chat about how I could put my various tech skills to work for Toptal's clients. Thank you for your consideration.
 
