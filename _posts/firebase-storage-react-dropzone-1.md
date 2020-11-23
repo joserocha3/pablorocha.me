@@ -8,6 +8,7 @@ author:
 ogImage:
   url: '/assets/blog/firebase-storage-react-dropzone-1/cover-1-800-400.jpg'
 isPublished: true
+isHidden: false
 ---
 > This blog post is the first of a two-part series. This first part will setup Firebase and react-dropzone. The second part will make react-dropzone more useful and then connect it to a Firebase instance.
 

@@ -8,6 +8,7 @@ author:
 ogImage:
   url: '/assets/blog/firebase-storage-react-dropzone-2/cover-2-800-400.jpg'
 isPublished: true
+isHidden: false
 ---
 > This blog post is the second of a two-part series. This second part will spruce up react-dropzone and connect it to Firebase Cloud Storage.
 

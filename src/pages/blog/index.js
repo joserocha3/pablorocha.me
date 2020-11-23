@@ -24,6 +24,7 @@ export async function getStaticProps() {
     'coverImage',
     'excerpt',
     'isPublished',
+    'isHidden',
   ])
 
   return {
