@@ -32,11 +32,11 @@ const Contact = () => {
           to the next level.
         </Text>
       </Container>
-      <WorkHistory />
-      <Education />
-      <Skills />
       <Ventures />
       <Projects />
+      <Skills />
+      <WorkHistory />
+      <Education />
     </Layout>
   )
 }
