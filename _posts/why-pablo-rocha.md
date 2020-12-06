@@ -7,7 +7,7 @@ author:
   name: Pablo Rocha
 ogImage:
   url: '/assets/blog/why-pablo-rocha/cover-800-400.jpg'
-isPublished: true
+isPublished: false
 isHidden: true
 ---
 Hello Toptal team,
