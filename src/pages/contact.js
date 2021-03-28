@@ -1,4 +1,4 @@
-import { Input, Heading, Textarea, VStack, Button, Text } from '@chakra-ui/core'
+import { Input, Heading, Textarea, VStack, Button, Text } from '@chakra-ui/react'
 
 import Layout from '@components/Layout'
 import Container from '@components/Container'

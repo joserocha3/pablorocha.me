@@ -1,5 +1,5 @@
 import { parseISO, format } from 'date-fns'
-import { Text } from '@chakra-ui/core'
+import { Text } from '@chakra-ui/react'
 
 const DateFormatter = ({ dateString }) => {
   const date = parseISO(dateString)

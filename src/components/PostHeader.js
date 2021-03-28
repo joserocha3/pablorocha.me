@@ -1,4 +1,4 @@
-import { VStack } from '@chakra-ui/core'
+import { VStack } from '@chakra-ui/react'
 import DateFormatter from '@components/DateFormatter'
 import CoverImage from '@components/CoverImage'
 import PostTitle from '@components/PostTitle'

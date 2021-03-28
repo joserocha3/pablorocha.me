@@ -25,7 +25,7 @@ Want to skip to the finished version of the code? Check the [part-2 branch](http
 We will use this [awesome component library](https://next.chakra-ui.com/) to very easily add some accessible an nicely styled components to our project.
 
 ```bash
-yarn add @chakra-ui/core@next framer-motion
+yarn add @chakra-ui/react@next framer-motion
 ```
 
 Notice the `next` tag. Currently, Charkra UI is being updated to version 1. It is recommended to start using that version for new projects, but since it is a work in progress it is available in the `next` channel.
@@ -39,7 +39,7 @@ In order to get Chakra UI working correctly, we need to setup the `ChakraProvide
 ```jsx
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { ChakraProvider } from '@chakra-ui/core'
+import { ChakraProvider } from '@chakra-ui/react'
 
 import App from './App'
 import * as serviceWorker from './serviceWorker'
@@ -67,7 +67,7 @@ Previously, we passed a `style` prop to the container component located in `App.
 First import the required components at the top of the file:
 
 ```jsx
-import { Flex, Text } from '@chakra-ui/core'
+import { Flex, Text } from '@chakra-ui/react'
 ```
 
 The `App` component will now look like this:
@@ -210,7 +210,7 @@ The function now updates the state, however we are not showing the user the acti
 Import the `Spinner` component:
 
 ```jsx
-import { Flex, Text, Spinner } from '@chakra-ui/core'
+import { Flex, Text, Spinner } from '@chakra-ui/react'
 ```
 
 Then add it to the returned component:
@@ -243,7 +243,7 @@ return (
 
 The `Spinner` component will be displayed while `isLoading` is true.
 
-We can add a Chakra UI `Alert` component to inform the user of errors and successful uploads. Further, we only need to display it if we have a message to show. 
+We can add a Chakra UI `Alert` component to inform the user of errors and successful uploads. Further, we only need to display it if we have a message to show.
 
 ```jsx
 {(error || message) && (
@@ -274,7 +274,7 @@ import {
   Alert,
   AlertIcon,
   AlertDescription,
-} from '@chakra-ui/core'
+} from '@chakra-ui/react'
 
 import { uploadFromBlobAsync } from './storage'
 

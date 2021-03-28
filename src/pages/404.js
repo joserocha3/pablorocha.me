@@ -1,4 +1,4 @@
-import { Heading, Image, Text, VStack } from '@chakra-ui/core'
+import { Heading, Image, Text, VStack } from '@chakra-ui/react'
 
 import Container from '@components/Container'
 import Layout from '@components/Layout'

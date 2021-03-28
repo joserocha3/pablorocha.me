@@ -1,4 +1,4 @@
-import { Avatar, HStack, VStack, Heading, Text } from '@chakra-ui/core'
+import { Avatar, HStack, VStack, Heading, Text } from '@chakra-ui/react'
 
 import Container from '@components/Container'
 import Link from '@components/Link'

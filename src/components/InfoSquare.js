@@ -4,7 +4,7 @@ import {
   Link,
   WrapItem,
   useColorModeValue,
-} from '@chakra-ui/core'
+} from '@chakra-ui/react'
 
 const InfoSquare = ({
   title,

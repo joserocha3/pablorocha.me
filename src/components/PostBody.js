@@ -1,4 +1,4 @@
-import { useColorMode } from '@chakra-ui/core'
+import { useColorMode } from '@chakra-ui/react'
 
 const PostBody = ({ content }) => {
   const { colorMode } = useColorMode()

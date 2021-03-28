@@ -1,4 +1,4 @@
-import { Heading, Wrap, WrapItem, Tag } from '@chakra-ui/core'
+import { Heading, Wrap, WrapItem, Tag } from '@chakra-ui/react'
 
 import Container from '@components/Container'
 

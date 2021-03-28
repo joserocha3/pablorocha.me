@@ -1,4 +1,4 @@
-import { Container as ChakraContainer } from '@chakra-ui/core'
+import { Container as ChakraContainer } from '@chakra-ui/react'
 
 const Container = ({ children, ...rest }) => {
   return (

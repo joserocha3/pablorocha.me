@@ -7,7 +7,7 @@ import {
   Heading,
   Text,
   useColorModeValue,
-} from '@chakra-ui/core'
+} from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 
 import Container from '@components/Container'

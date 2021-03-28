@@ -1,4 +1,4 @@
-import { Heading, Wrap } from '@chakra-ui/core'
+import { Heading, Wrap } from '@chakra-ui/react'
 
 import Container from '@components/Container'
 import InfoSquare from '@components/InfoSquare'
@@ -45,8 +45,8 @@ const Projects = () => {
         Projects
       </Heading>
       <Wrap as="h3" spacing={6}>
-        {data.map(({ title, description, ...rest }) => (
-          <InfoSquare title={title} description={description} {...rest} />
+        {data.map(({  title, description, ...rest }) => (
+          <InfoSquare key={title} title={title} description={description} {...rest} />
         ))}
       </Wrap>
     </Container>

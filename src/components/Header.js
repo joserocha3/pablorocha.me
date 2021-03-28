@@ -1,4 +1,4 @@
-import { Flex, HStack, IconButton, useColorMode } from '@chakra-ui/core'
+import { Flex, HStack, IconButton, useColorMode } from '@chakra-ui/react'
 import { EmailIcon, SunIcon, MoonIcon } from '@chakra-ui/icons'
 
 import Container from '@components/Container'

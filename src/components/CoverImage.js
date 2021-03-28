@@ -1,5 +1,5 @@
 import NextLink from 'next/link'
-import { Image, Link } from '@chakra-ui/core'
+import { Image, Link } from '@chakra-ui/react'
 
 const CoverImage = ({ title, src, slug }) => {
   return (
