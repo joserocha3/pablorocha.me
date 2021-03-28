@@ -18,17 +18,17 @@ If you missed the [first part of this series](https://pablorocha.me/blog/firebas
 
 Want to skip to the finished version of the code? Check the [part-2 branch](https://github.com/joserocha3/firebase-storage-react-dropzone/tree/part-2).
 
+Before you start you can see the [code in action?](https://pablorocha-blog-firebase-dropzone-2.netlify.app).
+
 ## Let's Get Started... Again
 
 ### Add Charkra UI
 
-We will use this [awesome component library](https://next.chakra-ui.com/) to very easily add some accessible an nicely styled components to our project.
+We will use this [awesome component library](https://chakra-ui.com/) to very easily add some accessible an nicely styled components to our project.
 
 ```bash
-yarn add @chakra-ui/react@next framer-motion
+yarn add @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^4
 ```
-
-Notice the `next` tag. Currently, Charkra UI is being updated to version 1. It is recommended to start using that version for new projects, but since it is a work in progress it is available in the `next` channel.
 
 ## Let's Code
 
@@ -261,7 +261,6 @@ We can add a Chakra UI `Alert` component to inform the user of errors and succes
 
 This component will be placed after the `Flex` component. However, we need to wrap both in a [fragment](https://reactjs.org/docs/fragments.html).
 
-
 When all is said and done `App.js` will look like this:s
 
 ```jsx
@@ -357,4 +356,4 @@ Go ahead and drag and drop a file. You will briefly see the loading indicator th
 
 ![firebase create web app](/assets/blog/firebase-storage-react-dropzone-2/firebase-uploaded.png)
 
-We have come a long way, now go ahead and implement this into your project. However, every project is unique so feel free to [reach to me](https://pablorocha.me/contact) if you hit any road blocks.
+We have come a long way, now go ahead and implement this into your project. However, every project is unique so feel free to [reach out to me](https://pablorocha.me/contact) if you hit any road blocks.
