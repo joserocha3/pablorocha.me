@@ -18,7 +18,7 @@ There is no point in building everything from scratch. Basically, *don't reinven
 
 Prefer to see the code? Check the [part-1 branch](https://github.com/joserocha3/firebase-storage-react-dropzone/tree/part-1).
 
-Before you start you can see the [code in action?](https://pablorocha-blog-firebase-dropzone-1.netlify.app).
+Before you start you can see the [code in action](https://pablorocha-blog-firebase-dropzone-1.netlify.app).
 
 ## Firebase Cloud Storage
 

@@ -18,7 +18,7 @@ If you missed the [first part of this series](https://pablorocha.me/blog/firebas
 
 Want to skip to the finished version of the code? Check the [part-2 branch](https://github.com/joserocha3/firebase-storage-react-dropzone/tree/part-2).
 
-Before you start you can see the [code in action?](https://pablorocha-blog-firebase-dropzone-2.netlify.app).
+Before you start you can see the [code in action](https://pablorocha-blog-firebase-dropzone-2.netlify.app).
 
 ## Let's Get Started... Again
 
