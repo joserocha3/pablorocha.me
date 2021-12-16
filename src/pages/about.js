@@ -20,7 +20,7 @@ const Contact = () => {
         </Text>
         <br />
         <Text fontSize="lg">
-          When I find free time I like jump rope and do some other active
+          When I find free time I like to jump rope and do some other active
           things. It is not always easy, but I try to stick to a keto diet 🍳
           🥓.
         </Text>
