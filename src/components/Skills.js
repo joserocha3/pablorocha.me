@@ -5,6 +5,7 @@ import Container from '@components/Container'
 const data = [
   'JavaScript',
   'React',
+  'Vue.js',
   'Flutter',
   'React Native',
   'Next.js',
