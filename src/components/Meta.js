@@ -5,40 +5,33 @@ const DESCRIPTION = 'Pablo Rocha is a developer & tech enthusiast.'
 const IMAGE = 'https://pablorocha.me/assets/img/headshot.jpg'
 const URL = 'https://pablorocha.me'
 
-function makeSchema() {
-  return [
-    {
-      type: 'application/ld+json',
-      innerHTML: JSON.stringify({
-        '@context': 'http://www.schema.org',
-        '@type': 'person',
-        name: 'Jose Pablo Rocha, Jr.',
-        image: IMAGE,
-        jobTitle: 'Software Engineer',
-        gender: 'male',
-        address: {
-          '@type': 'PostalAddress',
-          addressLocality: 'Edinburg',
-          addressRegion: 'TX',
-          postalCode: '78539',
-          addressCountry: 'United States',
-        },
-        email: 'hello@pablorocha.me',
-        birthDate: '1984-08-16',
-        alumniOf: 'University of Texas-Pan American',
-        birthPlace: 'Illinois',
-        sameAs: [
-          'https://twitter.com/jprocha101',
-          'https://www.facebook.com/jprocha101',
-          'https://github.com/joserocha3',
-          'https://instagram.com/jprocha101',
-          'https://www.linkedin.com/in/jprocha101',
-        ],
-        url: URL,
-      }),
-    },
-  ]
-}
+const makeSchema = () => ({
+  '@context': 'http://www.schema.org',
+  '@type': 'Person',
+  name: 'Jose Pablo Rocha, Jr.',
+  image: IMAGE,
+  jobTitle: 'Software Engineer',
+  gender: 'male',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Edinburg',
+    addressRegion: 'TX',
+    postalCode: '78539',
+    addressCountry: 'United States',
+  },
+  email: 'hello@pablorocha.me',
+  birthDate: '1984-08-16',
+  alumniOf: 'University of Texas-Pan American',
+  birthPlace: 'Illinois',
+  sameAs: [
+    'https://twitter.com/jprocha101',
+    'https://www.facebook.com/jprocha101',
+    'https://github.com/joserocha3',
+    'https://instagram.com/jprocha101',
+    'https://www.linkedin.com/in/jprocha101',
+  ],
+  url: URL,
+})
 
 const Meta = ({ title, description, image }) => {
   return (
