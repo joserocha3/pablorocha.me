@@ -10,8 +10,8 @@ function makeSchema() {
     {
       type: 'application/ld+json',
       innerHTML: JSON.stringify({
-        '@context': 'http://schema.org',
-        '@type': 'Person',
+        '@context': 'http://www.schema.org',
+        '@type': 'person',
         name: 'Jose Pablo Rocha, Jr.',
         image: IMAGE,
         jobTitle: 'Software Engineer',
@@ -25,7 +25,7 @@ function makeSchema() {
         },
         email: 'hello@pablorocha.me',
         birthDate: '1984-08-16',
-        alumniOf: 'University of Texas Pan American',
+        alumniOf: 'University of Texas-Pan American',
         birthPlace: 'Illinois',
         sameAs: [
           'https://twitter.com/jprocha101',
