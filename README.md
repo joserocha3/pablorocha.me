@@ -1,5 +1,7 @@
 # pablorocha.me
 
+[Vercel](http://therealsujitk-vercel-badge.vercel.app/?app=pablorocha-me)
+
 Pablo Rocha's personal website.
 
 Example blog post, goes in `src/pages/blog/name-of-file.mdx`:
