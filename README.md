@@ -1,6 +1,6 @@
 # pablorocha.me
 
-[Vercel](http://therealsujitk-vercel-badge.vercel.app/?app=pablorocha-me)
+![Vercel](http://therealsujitk-vercel-badge.vercel.app/?app=pablorocha-me)
 
 Pablo Rocha's personal website.
 
