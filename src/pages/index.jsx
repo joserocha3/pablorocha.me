@@ -145,10 +145,10 @@ export default function Home({ posts }) {
             conception to implementation to deployment.
           </p>
           <div className="mt-6 flex gap-6">
-            <SocialLink href="https://github.com/joserocha3" target="_blank" aria-label="Follow on GitHub" icon={GitHubIcon} />
-            <SocialLink href="https://www.linkedin.com/in/jprocha101" target="_blank" aria-label="Follow on LinkedIn" icon={LinkedInIcon} />
-            <SocialLink href="https://twitter.com/jprocha101" target="_blank" aria-label="Follow on Twitter" icon={TwitterIcon} />
-            <SocialLink href="https://instagram.com/jprocha101" target="_blank" aria-label="Follow on Instagram" icon={InstagramIcon} />
+            <SocialLink href="https://github.com/joserocha3" aria-label="Follow on GitHub" icon={GitHubIcon} />
+            <SocialLink href="https://www.linkedin.com/in/jprocha101" aria-label="Follow on LinkedIn" icon={LinkedInIcon} />
+            <SocialLink href="https://twitter.com/jprocha101" aria-label="Follow on Twitter" icon={TwitterIcon} />
+            <SocialLink href="https://instagram.com/jprocha101" aria-label="Follow on Instagram" icon={InstagramIcon} />
           </div>
         </div>
       </Container>
