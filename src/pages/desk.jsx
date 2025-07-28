@@ -35,18 +35,36 @@ export default function Uses() {
       <SimpleLayout title="Software and other tech you'll find at my desk." intro="Things that I use when I work (and play), just in case you were wondering.">
         <div className="space-y-20">
           <ToolsSection title="Workstation">
-            <Tool title="14” MacBook Pro, M1 Pro, 32GB RAM (2021)">I was always a PC guy prior to web development. I have now seen the light.</Tool>
+            <Tool title="14” MacBook Pro, M4 Pro, 48GB RAM (2024)">
+              After years on PC, switching to Mac completely transformed my dev workflow. It’s fast, reliable, and just works.
+            </Tool>
           </ToolsSection>
-          <ToolsSection title="Development tools">
-            <Tool title="VS Code">Trusted by me and almost every other developer I know.</Tool>
-            <Tool title="iTerm2">I like my terminal to match my style, and iTerm2 makes it happen.</Tool>
-            <Tool title="TablePlus">Wonderful database client. Beats having to build admin interfaces for all my projects!</Tool>
+
+          <ToolsSection title="Development Tools">
+            <Tool title="Cursor">
+              My go-to code editor. AI pair programming, refactoring, and navigation — all supercharged.
+            </Tool>
+            <Tool title="Warp">
+              A modern terminal that actually feels modern. Fast, slick, and fits right into my workflow.
+            </Tool>
+            <Tool title="TablePlus">
+              Clean, powerful database management without the need to spin up custom admin panels.
+            </Tool>
           </ToolsSection>
+
           <ToolsSection title="Design">
-            <Tool title="Affinity Designer">Perfect, price conscious alternative to Adobe Illustrator.</Tool>
+            <Tool title="Affinity Designer">
+              Lightweight, cost-effective, and handles everything I need for quick UI mockups and branding assets.
+            </Tool>
           </ToolsSection>
-          <ToolsSection title="Productivity">
-            <Tool title="Raycast">Found out about this not too long ago. Immediately replaced Spotlight.</Tool>
+
+          <ToolsSection title="AI">
+            <Tool title="ChatGPT">
+              My daily copilot — from brainstorming ideas to writing copy and debugging weird edge cases.
+            </Tool>
+            <Tool title="AMP">
+              An AI assistant plugin for VS Code/Cursor that helps me build features faster than I normally would solo.
+            </Tool>
           </ToolsSection>
         </div>
       </SimpleLayout>

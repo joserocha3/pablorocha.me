@@ -14,13 +14,13 @@ function MailIcon(props) {
 
 export function Contact() {
   return (
-    <form action="/thank-you" className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
+    <form action="/thank-you" className="p-6 border rounded-2xl border-zinc-100 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <MailIcon className="h-6 w-6 flex-none" />
+        <MailIcon className="flex-none w-6 h-6" />
         <span className="ml-3">Get in touch</span>
       </h2>
       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">I am available for contract work or to simply talk tech.</p>
-      <form className="mt-6 flex flex-col space-y-2" action="https://formspree.io/hello@pablorocha.me" method="POST">
+      <form className="flex flex-col mt-6 space-y-2" action="https://submit.formcast.io/pablo" method="POST">
         <input
           type="email"
           placeholder="Email address"

@@ -11,29 +11,20 @@ const startups = [
     className: 'bg-[#AFAEE7] dark:bg-[#AFAEE7] group-hover:opacity-20 opacity-30 dark:opacity-20 scale-100 sm:scale-95',
   },
   {
+    name: 'Formcast',
+    description: 'A platform for submitting your forms, simply point your HTML form to a secure endpoint.',
+    link: { href: 'https://www.criclick.com', label: 'criclick.com' },
+    className: 'bg-[#B2D3FF] dark:bg-[#005588] group-hover:opacity-20 opacity-30 dark:opacity-20 scale-100 sm:scale-95',
+  },
+  {
     name: 'Dot Dot Data',
     description: 'Startup providing location based web and mobile applications to various clients.',
     link: { href: 'https://www.dotdotdata.com', label: 'dotdotdata.com' },
     className: 'bg-[#F1A7A7] dark:bg-[#F187A7] group-hover:opacity-20 opacity-30 dark:opacity-20 scale-100 sm:scale-95',
   },
-  {
-    name: 'Criclick',
-    description: 'Connecting small businesses & service providers with the ideal local consumers.',
-    link: { href: 'https://www.criclick.com', label: 'criclick.com' },
-    className: 'bg-[#B2D3FF] dark:bg-[#005588] group-hover:opacity-20 opacity-30 dark:opacity-20 scale-100 sm:scale-95',
-  },
 ]
 
 const works = [
-  {
-    name: 'Japanese Graded Readers',
-    description: 'React Native app powered by an admin dashboard. Uses Firebase for authentication, storage and notifications.',
-    link: {
-      href: 'https://www.whiterabbitpress.com/japanesegradedreaders',
-      label: 'japanesegradedreaders.com',
-    },
-    className: 'bg-[#AAB7BD] dark:bg-[#AAB7BD] group-hover:opacity-20 opacity-30 dark:opacity-20 scale-100 sm:scale-95',
-  },
   {
     name: 'Pawsome Dogs Training & Behavior',
     description: 'Static website designed for a well-known Chicago dog trainer. Built using Gatsby and styled with styled-components.',
@@ -57,6 +48,15 @@ const works = [
       label: 'cagesum.com',
     },
     className: 'bg-[#D5A7B6] dark:bg-[#D5A7B6] group-hover:opacity-20 opacity-30 dark:opacity-20 scale-100 sm:scale-95',
+  },
+  {
+    name: 'Japanese Graded Readers',
+    description: 'React Native app powered by an admin dashboard. Uses Firebase for authentication, storage and notifications.',
+    link: {
+      href: 'https://www.whiterabbitpress.com/japanesegradedreaders',
+      label: 'japanesegradedreaders.com',
+    },
+    className: 'bg-[#AAB7BD] dark:bg-[#AAB7BD] group-hover:opacity-20 opacity-30 dark:opacity-20 scale-100 sm:scale-95',
   },
 ]
 
