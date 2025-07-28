@@ -7,19 +7,19 @@ const startups = [
   {
     name: 'NoMoreAnalog',
     description: 'Mobile and web application development. Making cool apps and keeping clients happy.',
-    link: { href: 'https://www.nomoreanalog.com', label: 'nomoreanalog.com' },
+    link: { href: 'https://nomoreanalog.com', label: 'nomoreanalog.com' },
     className: 'bg-[#AFAEE7] dark:bg-[#AFAEE7] group-hover:opacity-20 opacity-30 dark:opacity-20 scale-100 sm:scale-95',
   },
   {
     name: 'Formcast',
     description: 'A platform for submitting your forms, simply point your HTML form to a secure endpoint.',
-    link: { href: 'https://www.criclick.com', label: 'criclick.com' },
+    link: { href: 'https://formcast.io', label: 'formcast.io' },
     className: 'bg-[#B2D3FF] dark:bg-[#005588] group-hover:opacity-20 opacity-30 dark:opacity-20 scale-100 sm:scale-95',
   },
   {
     name: 'Dot Dot Data',
     description: 'Startup providing location based web and mobile applications to various clients.',
-    link: { href: 'https://www.dotdotdata.com', label: 'dotdotdata.com' },
+    link: { href: 'https://dotdotdata.com', label: 'dotdotdata.com' },
     className: 'bg-[#F1A7A7] dark:bg-[#F187A7] group-hover:opacity-20 opacity-30 dark:opacity-20 scale-100 sm:scale-95',
   },
 ]
@@ -28,14 +28,14 @@ const works = [
   {
     name: 'Pawsome Dogs Training & Behavior',
     description: 'Static website designed for a well-known Chicago dog trainer. Built using Gatsby and styled with styled-components.',
-    link: { href: 'https://www.pawsomedogs.net', label: 'pawsomedogs.net' },
+    link: { href: 'https://pawsomedogs.net', label: 'pawsomedogs.net' },
     className: 'bg-[#E0B255] dark:bg-[#EE0055] group-hover:opacity-20 opacity-30 dark:opacity-20 scale-100 sm:scale-95',
   },
   {
     name: 'Los Pinos Hardware Co.',
     description: 'Static website hosted for a growing hardware business. This is a static website generated used Nuxt.js.',
     link: {
-      href: 'https://www.lospinoshardware.com',
+      href: 'https://lospinoshardware.com',
       label: 'lospinoshardware.com',
     },
     className: 'bg-[#7DA180] dark:bg-[#009980] group-hover:opacity-20 opacity-30 dark:opacity-20 scale-100 sm:scale-95',
@@ -53,8 +53,8 @@ const works = [
     name: 'Japanese Graded Readers',
     description: 'React Native app powered by an admin dashboard. Uses Firebase for authentication, storage and notifications.',
     link: {
-      href: 'https://www.whiterabbitpress.com/japanesegradedreaders',
-      label: 'japanesegradedreaders.com',
+      href: 'https://www.whiterabbitpress.com/japanese-graded-readers',
+      label: 'japanese-graded-readers',
     },
     className: 'bg-[#AAB7BD] dark:bg-[#AAB7BD] group-hover:opacity-20 opacity-30 dark:opacity-20 scale-100 sm:scale-95',
   },
